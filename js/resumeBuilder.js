@@ -6,7 +6,7 @@ var bio = {
     	"role" : "Web Developer",
 		"mobile" : "0086-183 3782 8650",
         "email" : "lili.lin2012@hotmail.com",
-        "github" : "Oyster2015",
+        "github" : "lilian2016",
         "location" : "Ningbo, China",
         "skype" : "lili_lin0609"
 	    },
@@ -90,7 +90,7 @@ var education =  {
  	}]
  };
 
-$("#mapDiv").append(googleMap);
+
 
 bio.display = function() {
 
@@ -132,10 +132,7 @@ if(bio.skills.length > 0){
 	$("#skills").append(formattedSkill);
 }
 };
-
 bio.display();
-
-
 
 
 
@@ -161,8 +158,6 @@ for (var job in work.jobs){
 	 
 }
 };
-
-
 work.display();
 
 

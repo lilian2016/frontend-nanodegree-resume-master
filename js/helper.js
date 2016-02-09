@@ -150,11 +150,16 @@ function initializeMap() {
   placeData is the object returned from search results containing information
   about a single location.
   */
-  function createMapMarker(placeData) {
+  //function createMapMarker(placeData) {
 
     // The next lines save location data from the search result object to local variables
-    var lat = placeData.geometry.location.k;  // latitude from the place service
-    var lon = placeData.geometry.location.D;  // longitude from the place service
+    //var lat = placeData.geometry.location.k;  // latitude from the place service
+    //var lon = placeData.geometry.location.D;  // longitude from the place service
+  function createMapMarker(placeData) {
+    // The next lines save location data from the search result object to local variables
+    var lat = placeData.geometry.location.lat();
+    var lon = placeData.geometry.location.lng(); 
+
     var name = placeData.formatted_address;   // name of the place from the place service
     var bounds = window.mapBounds;            // current boundaries of the map window
 

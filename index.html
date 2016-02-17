@@ -46,9 +46,22 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
     <!--
   Uncomment the <script> tag below when you're ready to add an interactive
-  Google Map to your resume!
+  Google Map to your resume!<script type="text/javascript" src="js/jquery.min.js"></script> <script type="text/javascript" src="js/jquery.hoveraccordion.min.js"></script>
   -->
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+           
+   
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Setup HoverAccordion for Example 2 with some custom options
+            $('#example2').hoverAccordion({
+                activateitem: '1',
+                speed: 'fast'
+            });
+            $('#example2').children('li:first').addClass('firstitem');
+            $('#example2').children('li:last').addClass('lastitem');
+        });
+    </script>
 
     <meta name="viewport" content="width=device-width">
 </head>
@@ -70,58 +83,31 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
 
 
-
+<div id="content">
     <ul id="example2">
         <li><a href="#"><h2>Work Experience</h2></a>
             <ul>
                 <li id="workExperience" class='gray'>
-                  Content #1 - Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing
-                    elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua.
                 </li>
             </ul>
         </li>
-        <li><a href="#">Item 2</a>
+        <li><a href="#"><h2>Projects</h2></a>
             <ul>
-                <li>Content #2 - At vero eos et accusam et justo duo dolores et ea rebum.
-                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-                    dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum.
-                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-                    dolor sit amet.
+                <li id="projects">
                 </li>
             </ul>
         </li>
-        <li><a href="#">Item 3</a>
+        <li><a href="#"><h2>Education</h2></a>
             <ul>
-                <li>Content #3 - Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                    diam voluptua.
+                <li id="education" class='gray'>
                 </li>
             </ul>
         </li>
-        <li><a href="#">Item 4</a>
-            <ul>
-                <li>Content #4 - Vet clita kasd gubergren, no sea takimata sanctus est
-                    Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores
-                    et ea rebum. Vet clita kasd gubergren, no sea takimata sanctus est
-                    Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores
-                    et ea rebum.
-                </li>
-            </ul>
-        </li>
-    </ul>
 
 
+ </div>
 
-        <div id="workExperience" class='gray'>
-            <h2>Work Experience</h2>
-            <p></p>
-        </div>
-        <div id="projects">
-            <h2>Projects</h2>
-        </div>
-        <div id="education" class='gray'>
-            <h2>Education</h2>
-        </div>
+
 
         <div id="mapDiv">
             <h2>Where I've Lived and Worked</h2>

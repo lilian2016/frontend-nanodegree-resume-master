@@ -46,22 +46,12 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
     <!--
   Uncomment the <script> tag below when you're ready to add an interactive
-  Google Map to your resume!<script type="text/javascript" src="js/jquery.min.js"></script> <script type="text/javascript" src="js/jquery.hoveraccordion.min.js"></script>
+  Google Map to your resume!<script type="text/javascript" src="js/jquery.min.js"></script> <script type="text/javascript" src="js/jquery.hoveraccordion.min.js"></script>    <script type="text/javascript" src="js/jquery.min.js"></script>
   -->
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
            
-   
-    <script type="text/javascript">
-        $(document).ready(function () {
-            // Setup HoverAccordion for Example 2 with some custom options
-            $('#example2').hoverAccordion({
-                activateitem: '1',
-                speed: 'fast'
-            });
-            $('#example2').children('li:first').addClass('firstitem');
-            $('#example2').children('li:last').addClass('lastitem');
-        });
-    </script>
+    <script type="text/javascript" src="js/jquery.hoveraccordion.min.js"></script>
+
 
     <meta name="viewport" content="width=device-width">
 </head>
@@ -144,7 +134,16 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
         // Also, this is a JavaScript style comment. You can comment in JavaScript with:
 
         //   two slashes for all following characters on a single line, or
-
+        
+        $(document).ready(function () {
+            // Setup HoverAccordion for Example 2 with some custom options
+            $('#example2').hoverAccordion({
+                activateitem: '1',
+                speed: 'fast'
+            });
+            $('#example2').children('li:first').addClass('firstitem');
+            $('#example2').children('li:last').addClass('lastitem');
+        });
         /*
             an opening and closing set of slash asterisks for block comments.
         */

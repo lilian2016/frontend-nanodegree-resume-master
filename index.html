@@ -51,7 +51,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
            
     <script type="text/javascript" src="js/jquery.hoveraccordion.min.js"></script>
-
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js "></script>
 
     <meta name="viewport" content="width=device-width">
 </head>
@@ -73,18 +73,20 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
 
 
-<div id="content">
-    <ul id="example2">
+<div>
+    <ul id="listWrapper">
         <li><a href="#"><h2 class='panel-title'>Work Experience</h2></a>
             <ul>
                 <li id="workExperience" ></li>
             </ul>
         </li>
+
         <li><a href="#"><h2 class='panel-title'>Projects</h2></a>
             <ul>
                 <li id="projects"></li>
             </ul>
         </li>
+
         <li><a href="#"><h2 class='panel-title'>Education</h2></a>
             <ul>
                 <li id="education"></li>
@@ -92,15 +94,11 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
         </li>
 
 
- </div>
+    </ul>     
+</div>
 
+        <div id="mapDiv"><a href="#"><h2 class='panel-title'>Where I've Lived and Worked</h2></a></div>
 
-
-        <div id="mapDiv">
-            <ul>
-            <li><a href="#"><h2 class='panel-title'>Where I've Lived and Worked</h2></a>
-            </ul>
-        </div>
         <div id="letsConnect" class='dark-gray'>
             <h2 class='orange center-text'>Let's Connect</h2>
             <ul id="footerContacts" class="flex-box">
@@ -136,12 +134,12 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
         
         $(document).ready(function () {
             // Setup HoverAccordion for Example 2 with some custom options
-            $('#example2').hoverAccordion({
+            $('#listWrapper').hoverAccordion({
                 activateitem: '1',
                 speed: 'fast'
             });
-            $('#example2').children('li:first').addClass('firstitem');
-            $('#example2').children('li:last').addClass('lastitem');
+            $('#listWrapper').children('li:first').addClass('firstitem');
+            $('#listWrapper').children('li:last').addClass('lastitem');
         });
         /*
             an opening and closing set of slash asterisks for block comments.

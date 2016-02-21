@@ -81,26 +81,31 @@ a {
 
 .welcome-message {
   font-style: italic;
-  font-size: 18px;
-  color: #D65324;
-  line-height: 28px;
-  text-align: center;
+  font-size: 28px;
+  color: #333333;
+  line-height: 30px;
+  padding-top: 50px;
 }
 
 #skillsH3 {
-  color: #D65324;
+  color: #009688;
   display: none;
-  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 5px;
 }
 
 .orange {
   background-color: #D65324;
 }
 
-.orange-text {
-  color: #D65324;
+.green-text {
+  color: #009688;
+  font-weight: bold;
 }
 
+.orange-text {
+  color: #009688;
+}
 .white-text {
   font-weight: bold;
   color: #333333;
@@ -127,6 +132,10 @@ a {
   background-color: #009688;
 }
 
+.light-gray {
+  background-color: #D9D9D9;
+}
+
 /* TODO: Replace with image later#d7ffe5 #484848*/
 #header {
   background-color: #D9D9D9;
@@ -142,7 +151,7 @@ a {
 }
 
 .center-content {
-  padding-top: 2.5%;
+  padding-top: 2.9%;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 2.5%
